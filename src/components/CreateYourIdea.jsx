@@ -11,7 +11,7 @@ export default function CreateYourIdea() {
       />
 
       {/* Form Overlay */}
-      <div className="absolute inset-0 flex items-end justify-center pb-16 px-8">
+      <div className="absolute inset-0 flex items-end justify-center pb-8 px-8">
         <div className="bg-white border border-black max-w-3xl w-full p-12">
           <h2 className="text-3xl font-bold text-black mb-2 tracking-tight uppercase">
             Contatti
