@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Home from './components/Home'
+import ImageSlider from './components/ImageSlider'
+import About from './components/About'
+import MyWorks from './components/MyWorks'
+import CreateYourIdea from './components/CreateYourIdea'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="w-full overflow-x-hidden">
+      {/* Home Section - 1920x1080 */}
+      <Home />
+
+      {/* First Image Slider - 1920x550 */}
+      <ImageSlider />
+
+      {/* About Section - 1920x2500 */}
+      <About />
+
+      {/* Second Image Slider - 1920x550 */}
+      <ImageSlider autoPlay={true} interval={5000} />
+
+      {/* My Works Section - 1920x1300 */}
+      <MyWorks />
+
+      {/* Third Image Slider - 1920x550 */}
+      <ImageSlider autoPlay={true} interval={6000} />
+
+      {/* Create Your Idea Section - 1920x1080 */}
+      <CreateYourIdea />
+
+      {/* Footer - 1920x500 */}
+      <Footer />
+    </div>
   )
 }
 
