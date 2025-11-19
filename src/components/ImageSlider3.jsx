@@ -12,28 +12,27 @@ import img11 from '../assets/fotoslider/525138238_18394144597140496_465444193499
 import img12 from '../assets/fotoslider/525192705_18394144621140496_6377509599729244824_n..jpg'
 import img13 from '../assets/fotoslider/525580767_18394144606140496_2789879464969360031_n..jpg'
 
-export default function ImageSlider() {
+export default function ImageSlider3() {
   const slides = [
-    { id: 1, src: img1 },
-    { id: 2, src: img2 },
-    { id: 3, src: img3 },
-    { id: 4, src: img4 },
-    { id: 5, src: img5 },
-    { id: 6, src: img6 },
-    { id: 7, src: img7 },
-    { id: 8, src: img8 },
-    { id: 9, src: img9 },
-    { id: 10, src: img10 },
-    { id: 11, src: img11 },
-    { id: 12, src: img12 },
-    { id: 13, src: img13 },
+    { id: 1, src: img6 },
+    { id: 2, src: img12 },
+    { id: 3, src: img4 },
+    { id: 4, src: img9 },
+    { id: 5, src: img1 },
+    { id: 6, src: img13 },
+    { id: 7, src: img5 },
+    { id: 8, src: img10 },
+    { id: 9, src: img2 },
+    { id: 10, src: img8 },
+    { id: 11, src: img3 },
+    { id: 12, src: img11 },
+    { id: 13, src: img7 },
   ]
 
   return (
     <section className="w-full bg-white overflow-hidden" style={{ height: '28.65vw', minHeight: '300px', maxHeight: '550px' }}>
       <div className="relative w-full h-full">
-        <div className="flex h-full animate-scroll">
-          {/* Prima serie di slide */}
+        <div className="flex h-full animate-scroll-3">
           {slides.map((slide) => (
             <div
               key={`first-${slide.id}`}
@@ -47,7 +46,6 @@ export default function ImageSlider() {
               />
             </div>
           ))}
-          {/* Duplicato per loop infinito */}
           {slides.map((slide) => (
             <div
               key={`second-${slide.id}`}
@@ -65,7 +63,7 @@ export default function ImageSlider() {
       </div>
 
       <style jsx>{`
-        @keyframes scroll {
+        @keyframes scroll-3 {
           0% {
             transform: translateX(0);
           }
@@ -74,8 +72,8 @@ export default function ImageSlider() {
           }
         }
 
-        .animate-scroll {
-          animation: scroll 35s linear infinite;
+        .animate-scroll-3 {
+          animation: scroll-3 65s linear infinite;
         }
       `}</style>
     </section>

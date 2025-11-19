@@ -9,11 +9,11 @@ export default function Home() {
         alt="Background"
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center p-8">
         <img
           src={nomadlogowhite}
           alt="Nomad Logo"
-          className="max-w-4xl w-full h-auto px-8"
+          className="max-w-4xl h-auto object-contain"
         />
       </div>
     </section>
